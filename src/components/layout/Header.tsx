@@ -29,12 +29,14 @@ export const Header: React.FC = () => {
       display: 'flex', 
       justifyContent: 'space-between', 
       alignItems: 'center', 
-      padding: '1rem 2rem', 
+      padding: '0.75rem 2rem', 
       borderBottom: '1px solid var(--border)',
-      backgroundColor: 'var(--surface)',
+      backgroundColor: 'rgba(5, 5, 5, 0.8)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
       position: 'sticky',
       top: 0,
-      zIndex: 10
+      zIndex: 100
     }}>
       <Link to={user ? '/app/explorar' : '/'} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold', fontSize: '1.25rem', color: 'var(--primary)' }}>
         <Dumbbell size={24} />
@@ -60,13 +62,15 @@ export const Header: React.FC = () => {
           </button>
         ) : (
           <div style={{ display: 'flex', gap: '1rem' }}>
-            <Link to="/login" style={{ color: 'var(--text-primary)', padding: '0.5rem 1rem' }}>Ingresar</Link>
+            <Link to="/login" style={{ color: 'var(--text-secondary)', padding: '0.5rem 1rem', fontWeight: 500 }}>Ingresar</Link>
             <Link to="/register" style={{ 
               backgroundColor: 'var(--primary)', 
-              color: 'var(--background)', 
-              padding: '0.5rem 1rem', 
-              borderRadius: '8px',
-              fontWeight: 600
+              color: 'white', 
+              padding: '0.6rem 1.2rem', 
+              borderRadius: '12px',
+              fontWeight: 700,
+              fontSize: '0.9rem',
+              boxShadow: '0 4px 12px var(--primary-glow)'
             }}>
               Empezar gratis
             </Link>

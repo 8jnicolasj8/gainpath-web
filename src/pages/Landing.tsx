@@ -128,7 +128,7 @@ export const Landing: React.FC = () => {
               Comenzar Gratis <ArrowRight size={20} />
             </Link>
 
-            <a href="#" style={{ 
+            <a href="https://www.mediafire.com/file/eka2vy9wncp0ep4/application-39edd90d-2b95-4471-a111-1ae8012c6190.apk/file" target="_blank" rel="noopener noreferrer" style={{ 
               backgroundColor: 'var(--surface)', 
               color: 'white', 
               padding: '1.2rem 2.5rem', 
